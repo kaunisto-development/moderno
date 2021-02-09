@@ -24,7 +24,7 @@ li {
 body {
     font-family: 'Roboto-Regular', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     color: $text;
 }
@@ -54,4 +54,9 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.rate-star {
+    display: inline-block;
+    margin-right: 13px;
 }
