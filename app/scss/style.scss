@@ -76,13 +76,13 @@
     &-title {
         margin-bottom: 10px;
         font-size: 48px;
-        font-weight: 700;
+        @include bold;
         line-height: 72px;
     }
     &-text {
         margin-bottom: 50px;
         font-size: 20px;
-        font-weight: 500;
+        @include medium;
         line-height: 30px;
     }
     &-form {
@@ -97,12 +97,12 @@
             height: 56px;
             border:none;
             font-size: 14px;
-            font-weight: 500;
+            @include medium;
             padding-left: 25px;
             padding-right: 60px;
             &::placeholder {
                 color:#90a4ae;
-                font-weight: 500;
+                @include medium;
             }
 
         }
@@ -167,7 +167,7 @@
         justify-content: space-between;
         padding: 10px 30px;
         align-items: center;
-        font-weight: 500;
+        @include medium;
         color:$bg;
         border-bottom: 1px solid #e7ecf2;
     }
@@ -186,7 +186,7 @@
     }
     &-price {
         font-size: 20px;
-        font-weight: 700;
+        @include bold;
     }
     &-info {
         display: flex;
@@ -211,7 +211,7 @@
        }
        span {
         font-size: 14px;
-        font-weight: 500;
+        @include medium;
        }
        
     }
