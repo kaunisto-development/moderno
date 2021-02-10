@@ -374,7 +374,7 @@
 
 // Tutorials
 .tutorials {
-    padding: 70px 0 120px;
+    padding: 50px 0 120px;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -401,6 +401,26 @@
     }
 }
 
+// Footer
+.footer {
+    background-color: $bg;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__col {
+    max-width: 270px;
+}
+
+.footer__copyright {
+    font-size: 15px;
+    text-align: center;
+    padding: 25px 0;
+    color: #919699;
+    border-top: 1px solid #919699;
+}
 
 
 
