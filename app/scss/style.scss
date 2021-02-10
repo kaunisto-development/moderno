@@ -115,9 +115,7 @@
         }
     }
 }
-
 // Products
-
 .products {
     padding: 110px 0;
     background-color: $grey;
@@ -142,13 +140,11 @@
         }
     }
 }
-
 .products__inner-items {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
 }
-
 .product__item {
     max-width: 442px;
     width: 100%;
@@ -223,9 +219,6 @@
     }
     
 }
-
-
-
 .products__bottom-btn {
     text-align: center;
     button {
@@ -245,7 +238,6 @@
 
     
 }
-
 // Product-slider
 .product-slider {
     padding: 110px 0 120px;
@@ -275,7 +267,6 @@
 
     }
 }
-
 // Advantages
 .advantages {
     background-color: $bg;
@@ -293,6 +284,7 @@
     max-width: 370px;
     text-align: center;
     padding: 0px 15px;
+    cursor: pointer;
     &:hover {
         .advantages__item-image {
             background-color: $green;
@@ -328,7 +320,6 @@
         transition: all 0.3s ease;
     }
 }
-
 .svg__1 {
     width:70px
 }
@@ -340,6 +331,47 @@
 .svg__3 {
     width: 85px;
 }
+
+// Author
+.author {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box {
+        width: 100%;
+        max-width: 650px;
+        min-height: 215px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        color: #fff;
+        margin-right: 45px;
+        max-width: 270px;
+        span {
+            @include bold;
+        }
+    }
+    &__link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 12px 40px;
+        background-color: #fff;
+        &:hover {
+            color: $green;
+        }
+    }
+    
+}
+
 
   
 
