@@ -60,6 +60,15 @@
     }
 }
 
+.header__circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    & + .header__circle {
+        margin-left: 15px;
+    }
+}
 // Search
 
 .search {
@@ -491,9 +500,7 @@
             left: 0;
             font-size: 18px;
             color: $green;
-    }
-    
-
+        }
     }
 
 }
@@ -510,8 +517,6 @@
         width: 28px;
         height: 28px;
         background-image: url(../images/icons/css_sprites.png);
-        
-        
     }
 }
 .link-twitter {
@@ -531,7 +536,6 @@
     display: block;
     width: 100%;
     input {
-        
         height: 40px;
         background-color: #2f3c43;
         font-size: 14px;
