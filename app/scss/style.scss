@@ -79,9 +79,6 @@
         color: #a0a0a0;
         font-size: 14px;
     }
-    & + .header__circle {
-        margin-left: 15px;
-    }
     span {
         position: absolute;
         width: 18px;
@@ -162,15 +159,115 @@
     }
 }
 .user__menu {
-    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
-    border: 1px solid rgb(204, 204, 204);
+    top: 69px;
+    left: 20px;
+    border: 0px solid rgb(204, 204, 204);
     position: absolute;
     background-color: #fff;
+    padding: 0 20px;
+    width: 158px;
+    transition: all 0.5s ease;
+    height: 0;
+    overflow: hidden;
     a {
         font-size: 12px;
         color: #546e7a;
-        line-height: 36px;
+        margin-bottom: 15px;
     }
+}
+.circle__menu {
+    position: absolute;
+    top: 69px;
+}
+.user__box,
+.basket__box {
+    position: relative;
+    height: 90px;
+    margin-top: 40px;
+    &:hover {
+        .user__menu {
+            height: auto;
+            border-width:1px;
+            padding:20px;
+            overflow:auto;
+        }
+    }
+}
+
+.circle__menu {
+    border: 1px solid #e0e0e0;
+    top: 62px;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.basket__box {
+    margin-top: 52px;
+    margin-left: 15px;
+    &:hover {
+        .circle__menu {
+            overflow: auto;
+            height: auto;
+        }
+    }
+}
+.circle__item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    width: 269px;
+    line-height: 21px;
+}
+.circle__img {
+    margin-right: 15px;
+}
+.circle__info-name {
+    font-size: 15px;
+    @include medium;
+    color:$bg;
+}
+.circle__info-theme {
+    font-size: 12px;
+    color: $green;
+}
+.circle__info-price {
+    @include medium;
+    color: #000;
+}
+.basket__sum {
+    padding: 16px 17px 12px;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    background-color: #fff;
+}
+.basket__sum-info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13px;
+    padding-right: 22px;
+    @include bold;
+    color: $bg;
+    margin-bottom: 15px;
+}
+.basket__btn {
+    font-size: 14px;
+    @include bold;
+    color:#fff;
+    background-color: $green;
+    padding: 7px 5px;
+    text-align: center;
+    width: 100px;
+}
+.basket__btn-checkout {
+    width: 123px;
+    background-color: $red;
+    padding: 7px 5px;
+    text-align: center;
+    margin-left: 5px;
 }
 // Search
 
